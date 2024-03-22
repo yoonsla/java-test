@@ -1,4 +1,4 @@
-package com.example.java;
+package com.example.java.future;
 
 import com.example.java.future.CallbackTest;
 import com.example.java.future.FutureTest;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class AppRunner implements ApplicationRunner {
+public class FutureAppRunner implements ApplicationRunner {
 
     private final FutureTest futureTest;
     private final CallbackTest callbackTest;
@@ -22,6 +22,6 @@ public class AppRunner implements ApplicationRunner {
 //        futureTest.future();
 //        futureTest.futureTask();
 //        futureTest.futureTask2();
-        callbackTest.callbackFuture();
+//        callbackTest.callbackFuture();
     }
 }
